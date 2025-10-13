@@ -1,0 +1,16 @@
+name:
+  variable
+on:
+  push
+env:
+  cloud: aws
+jobs:
+  getting_job:
+    runs-on: ubuntu
+    env:
+      gretting: hello
+    steps:
+      - name: "HI"
+        run: echo "hello $First_Name $gretting $cloud"
+        env:
+          First_Name: Jetha
