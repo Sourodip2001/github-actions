@@ -6,7 +6,7 @@ env:
   cloud: aws
 jobs:
   getting_job:
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     env:
       gretting: hello
     steps:
