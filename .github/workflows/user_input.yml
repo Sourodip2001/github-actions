@@ -17,4 +17,4 @@ jobs:
     steps:
       - name: Add Number
         id: sum
-        run: echo " $((${{ inputs.number1 }} + ${{ input.number1 }})) "
+        run: echo " $((${{ inputs.number1 }} + ${{ inputs.number1 }})) "
