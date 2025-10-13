@@ -1,0 +1,20 @@
+name: Test User input
+
+on:
+  workflow_dispatch:
+    inputs:
+      number1:
+        description: 'First Number'
+        default: '0'
+        required: true
+      number2:
+        description: 'second Number'
+        default: '0'
+        required: true
+jobs:
+  add_numbers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add Number
+        id: sum
+        run: echo " $((${{ inputs.number1 }} + ${{ input.number1 }})) "
