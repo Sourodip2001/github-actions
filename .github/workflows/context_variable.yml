@@ -1,0 +1,16 @@
+name:
+  variable
+on:
+  push
+env:
+  cloud: aws
+jobs:
+  getting_job:
+    runs-on: ubuntu-latest
+    env:
+      gretting: hello
+    steps:
+      - name: "HI"
+        run: echo "hello ${{ github.workflow }} ${{ github.triggering_actor }} $cloud ${{ github.workflow }}"
+        env:
+          First_Name: Jetha
